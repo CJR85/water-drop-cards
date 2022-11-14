@@ -40,9 +40,37 @@ body {
 }
 
 .container .drop:nth-child(2) {
-  border-radius: 73% 27% 59% 41% / 57% 59% 41% 43%;
+  border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
 }
 
 .container .drop:nth-child(3) {
   border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
+}
+
+.container .drop:hover {
+  border-radius: 50%;
+}
+
+.container .drop::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.container .drop::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 110px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
 }
